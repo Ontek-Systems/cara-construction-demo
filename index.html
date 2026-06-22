@@ -1957,7 +1957,7 @@
 
       <script>
       (function () {
-        var map = L.map('service-map', { zoomControl: true, scrollWheelZoom: false }).setView([56.5, -3.8], 9);
+        var map = L.map('service-map', { zoomControl: true, scrollWheelZoom: false }).setView([51.3334, -0.0948], 14);
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
@@ -1971,30 +1971,7 @@
           iconSize: [28, 36],
           iconAnchor: [14, 36]
         });
-        L.marker([56.3962, -3.4314], { icon: pinIcon }).addTo(map);
-
-        // Hardcoded service area polygon (clockwise from NW)
-        var serviceArea = [
-          [56.371, -3.994], // Comrie
-          [56.188, -3.965], // Dunblane
-          [56.207, -3.430], // Kinross / Milnathort
-          [56.333, -3.310], // Abernethy
-          [56.362, -3.212], // Errol
-          [56.421, -3.142], // Inchture
-          [56.462, -2.971], // Dundee
-          [56.624, -3.228], // Alyth
-          [56.588, -3.338], // Blairgowrie
-          [56.566, -3.589], // Dunkeld
-          [56.373, -3.839], // Crieff
-        ];
-        L.polygon(serviceArea, {
-          color: '#e8b238',
-          weight: 2.5,
-          opacity: 0.9,
-          fill: true,
-          fillColor: '#e8b238',
-          fillOpacity: 0.10
-        }).addTo(map);
+        L.marker([51.3334, -0.0948], { icon: pinIcon }).addTo(map);
       })();
       </script>
     </section>
