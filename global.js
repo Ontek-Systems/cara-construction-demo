@@ -87,7 +87,7 @@ async function loadComponents() {
     const headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
         try {
-            const resp = await fetch('/cara-construction-demo/components/header.html');
+            const resp = await fetch('/components/header.html');
             let html = await resp.text();
 
             if (path.includes('/contact')) {
@@ -102,7 +102,7 @@ async function loadComponents() {
     const footerPlaceholder = document.getElementById('footer-placeholder');
     if (footerPlaceholder) {
         try {
-            const resp = await fetch('/cara-construction-demo/components/footer.html');
+            const resp = await fetch('/components/footer.html');
             let html = await resp.text();
             if (document.body.hasAttribute('data-suppress-footer-cta')) {
                 const footerStart = html.indexOf('<footer');
